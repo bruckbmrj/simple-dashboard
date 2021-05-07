@@ -1,0 +1,9 @@
+.user-btn{
+  background: transparent;
+  color: #0D5DE5;
+}
+::ng-deep .btn.focus, .btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+

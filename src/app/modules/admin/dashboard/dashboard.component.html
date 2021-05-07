@@ -1,0 +1,115 @@
+<app-menu></app-menu>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 col-lg-2 sidebar bg-light">
+      <app-sidebar></app-sidebar>
+    </div>
+    <div class="col-md-9 content">
+      <div class="row px-4 py-4">
+        <div class="col-lg-8 d-xl-flex graph-area">
+          <div class="graph my-5">
+            <div
+            echarts
+            [options]="pizzaChard"
+            style="width: 300px"
+            class="demo-chart"
+          ></div>
+          </div>
+          <div class="new-records mx-4 my-5">
+            <h3>New Records</h3>
+            <p>
+              This chart shows the new Real-State units added to website
+              last 6 months
+            </p>
+            <a href="#">View Long-term chart</a>
+          </div>
+        </div>
+        <div class="col-lg-4 mt-3 mt-lg-0">
+          <div class="card text-white card-blue mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Gerenciamento do Seu Site</h5>
+              <h2 class="text-center">12.6 K</h2>
+              <p class="card-text">
+                Some quick example text to build on the card title and make
+                up the bulk of the card's content.
+              </p>
+              <div class="card-footer text-muted">
+                <div class="text-card-footer d-flex justify-content-around">
+                  <p>Un-registered Units</p>
+                  <h5 class="text-white h5">6.2 K</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-3 py-3">
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Usuários online
+              </h6>
+              <h2 class="text-center">24</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Faturamento
+              </h6>
+              <h2 class="text-center">906.00</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Vendas
+              </h6>
+              <h2 class="text-center">15</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row px-3 py-3">
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Fornecedores
+              </h6>
+              <h2 class="text-center">6</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Usuários Premium
+              </h6>
+              <h2 class="text-center">40</h2>
+            </div>
+          </div>
+        </div>
+        <div class="mb-3 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-subtitle mb-2 text-muted text-center">
+                Vendas de produtos
+              </h6>
+              <h2 class="text-center">1.406,00</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

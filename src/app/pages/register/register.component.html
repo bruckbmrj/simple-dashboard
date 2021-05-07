@@ -1,0 +1,65 @@
+<div id="login-container">
+  <h1>Registrar</h1>
+  <form [formGroup]="registerForm">
+    <label for="email">Nome</label>
+    <input
+      type="name"
+      name="name"
+      formControlName="name"
+      placeholder="Digite seu nome"
+      autocomplete="off"
+    >
+      <div *ngIf="registerForm.touched && registerForm.dirty">
+        <span *ngIf="f.name.errors?.required">
+         *O nome é obrigatório
+        </span>
+
+      </div>
+
+      <label for="email">E-mail</label>
+      <input
+        type="email"
+        name="email"
+        formControlName="email"
+        placeholder="Digite seu e-email"
+        autocomplete="off"
+      >
+      <div *ngIf="f.emai.touched && f.email.dirty && f.email.errors">
+        <span *ngIf="f.email.errors.required">
+          *O email é obrigatório
+        </span>
+
+        <span *ngIf="f.email.errors.email">
+          *O formato do email é inválido
+        </span>
+
+      </div>
+
+
+    <label for="password">Senha</label>
+    <input
+      type="password"
+      name="password"
+      formControlName="password"
+      placeholder="Digite sua senha">
+
+    <label for="password">Confirmar Senha</label>
+    <input
+      type="password"
+      name="password"
+      formControlName="confirm_password"
+      placeholder="Confirmar senha">
+
+      <button
+        [disabled]="registerForm.invalid"
+        (click)="submit()"
+        type="submit"
+        class="btn btn-primary">
+        Registrar
+    </button>
+  </form>
+  <div id="register-container">
+    <p>Já tem uma conta</p>
+    <a href="#">Login</a>
+  </div>
+</div>

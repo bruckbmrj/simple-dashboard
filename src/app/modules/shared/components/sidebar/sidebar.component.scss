@@ -1,0 +1,37 @@
+.sidebar {
+  height: auto;
+  min-height: calc(100vh - 118px);
+}
+.sidebar-menu {
+  color: #aaa;
+}
+.sidebar-menu .nav-item {
+  width: 85%;
+  text-align: center;
+  margin: 10px 0;
+}
+.sidebar-menu .nav-item .nav-link {
+  color: #777;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-menu .nav-item .nav-link:hover {
+  background: #cde7fb;
+  color: #0D5DE5;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.sidebar-menu .nav-item .nav-link.active {
+  background: #cde7fb;
+  color: #0D5DE5;
+  border-radius: 20px;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: auto;
+    min-height: auto;
+  }
+}

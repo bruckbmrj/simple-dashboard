@@ -1,0 +1,33 @@
+<div id="login-container">
+  <h1>Login</h1>
+  <form [formGroup]="loginForm">
+    <label for="email">E-mail</label>
+    <input
+      type="email"
+      name="email"
+      id="email"
+      formControlName="email"
+      placeholder="Digite seu e-email"
+      autocomplete="off">
+
+    <label for="password">Senha</label>
+    <input
+      type="password"
+      name="password"
+      id="password"
+      formControlName="password"
+      placeholder="Digite sua senha">
+
+      <button
+        [disabled]="loginForm.invalid"
+        (click)="submit()"
+        type="submit"
+        class="btn btn-primary">
+        Login
+    </button>
+  </form>
+  <div id="register-container">
+    <p>Ainda não tem uma conta?</p>
+    <a href="#">Registrar</a>
+  </div>
+</div>
